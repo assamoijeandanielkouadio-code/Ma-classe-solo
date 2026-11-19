@@ -19,7 +19,7 @@ def lire_notes(chemin):
     with open(chemin, newline="", encoding="utf-8") as fichier:
         lecteur = csv.DictReader(fichier)
         return [(float(l["note"]), float(l["coefficient"])) for l in lecteur]
-
+    
 
 def mention(moyenne):
     """Renvoie la mention correspondant à une moyenne sur 20."""
